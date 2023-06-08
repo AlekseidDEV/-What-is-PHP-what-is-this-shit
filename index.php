@@ -1,34 +1,43 @@
-<meta charset="utf-8">
-    <?php
-        mb_internal_encoding('UTF-8');
-        error_reporting(E_ALL);
-        ini_set('display errors' , 'on');
-        echo 'привет мир!';
-        include 'code.php';
-    ?>
-
-    <!-- вывод на экран -->
+<?php
+//echo 'hello world' ;
 
 
 
-    <!-- <php
-        mb_internal_encoding('UTF-8');
-        echo 'привет мир!';
-    > -->
-    <!-- указание кодировки для коректного отображения -->
+$name = "'Aleksei'";
+$age = 20;
+$hobby = 'fishing';
+$IsMarried = true;
+$pet = 'cat';
+$petName = 'Bars';
 
-    <!-- <php 
-        error_reporting(E_ALL);
-        ini_set('display errors' , 'on')
-    > -->
+//
+//echo $name . "\n";
+//echo $age . "\n";
+//echo $hobby . "\n";
+//echo $IsMarried . "\n";
+//echo $pet . "\n";
+//echo $petName . "\n";
 
-    <!-- вывод всех ошибок (фатал, варнинг, нотисай) -->
+//$nameFriend = 'Егор';
+//$ageFriend = 20;
+//$smokeFriend = true;
+//$weightFriend = 'имеет';
+//
+//echo $nameFriend . "\n";
+//echo $ageFriend . "\n";
+//echo $smokeFriend . "\n";
+//echo $weightFriend . "\n";
 
+$person = [
+   'name' => 'Aleksei',
+    'age'  => 20,
+    'hobby' => 'fishing' ,
+    'is_married' => true,
+    'pet' => 'cat',
+    'pet_name' => 'Bars',
+];
 
-    <!-- <php 
-        error_reporting(0);
-        ini_set('display errors' , 'off')
-    > -->
+print_r($person['name']);
 
-    <!-- это настройка для выключения на выложенном сайте на хостинг -->
-
+// это массив
+// echo и print_r способы вывода. Echo работает со строками, для вывода массивов лучше print_r (он вообще все выводит)
